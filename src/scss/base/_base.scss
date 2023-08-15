@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: Noto Serif;
+    background-color: var(--accent-2-shade);
+}
+
+[class*="__container"] {
+    max-width: 1620px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.button-signIn {
+    color: #FFF;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.45;
+}
+
+.button-search {
+    font-size: 28px;
+    line-height: 1.03;
+    color: #FFF;
+    padding: 27px 56px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.button-details {
+    font-size: 28px;
+    line-height: 1.03;
+    font-weight: 600;
+    color: #FFF;
+    padding: 27px 150px;
+    border-radius: 20px;
+}
+
+.button-sub {
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 600;
+    padding: 21px 46px;
+    color: #FFF;
+    border-radius: 15px;
+}
