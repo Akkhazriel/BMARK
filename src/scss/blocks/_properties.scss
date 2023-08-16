@@ -1,6 +1,7 @@
 .properties {
     background-color: #fff;
     overflow: hidden;
+    padding-bottom: 100px;
 
     &__container {
         display: flex;
@@ -39,67 +40,51 @@
         column-gap: 72px;
     }
 
+    &__btns-wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+    }
+
     &__btn-radio {
+        display: none;
+
+        &:checked + .properties__btn-radio-fake::before {
+            opacity: 1;
+            background-color: var(--accent-3);
+        }
+    }
+
+    &__btn-radio-fake {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 1px solid var(--black-shade-2);
+        border-radius: 50%;
         position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
 
-        &:nth-child(1) {
-            &::after {
-                position: absolute;
-                content: 'Rent';
-                bottom: -4px;
-                left: 27px;
-
-                color: var(--black-shade-2);
-
-
-                font-size: 26px;
-                font-weight: 600;
-                line-height: 1.38; /* 138.462% */
-            }
-
-            &::before {
-                position: absolute;
-                content: '';
-                width: 25px;
-                height: 25px;
-                border-radius: 50%;
-                border: 1px solid var(--black-shade-2);
-                bottom: -5px;
-                right: -6px;
-            }
+            background-color: #000;
+            top: 50%;
+            left: calc(47% + 1px);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.2s ease-in;
         }
+    }
 
-        &:nth-child(2) {
-            &::after {
-                position: absolute;
-                content: 'Buy';
-                bottom: -4px;
-                left: 27px;
+    &__btn-radio-text {
+        color: var(--black-shade-2);
 
-                color: var(--black-shade-2);
-
-
-                font-size: 26px;
-                font-weight: 600;
-                line-height: 1.38; /* 138.462% */
-            }
-        }
-
-        &:nth-child(3) {
-            &::after {
-                position: absolute;
-                content: 'Sell';
-                bottom: -4px;
-                left: 27px;
-
-                color: var(--black-shade-2);
-
-
-                font-size: 26px;
-                font-weight: 600;
-                line-height: 1.38; /* 138.462% */
-            }
-        }
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.38; /* 138.462% */
     }
 
     &__cards {

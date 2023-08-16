@@ -3,6 +3,7 @@ import activeLink from "./modules/menu-inputs";
 import { autoCompleteJs } from "./modules/menu-inputs";
 import { select } from "./modules/menu-inputs";
 import Swiper from 'swiper/bundle';
+import { slideToggle } from "./modules/slider-img";
 
 select();
 
