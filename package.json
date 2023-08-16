@@ -37,6 +37,7 @@
   "dependencies": {
     "@tarekraafat/autocomplete.js": "^10.2.7",
     "air-datepicker": "^3.4.0",
-    "custom-select": "^1.1.15"
+    "custom-select": "^1.1.15",
+    "swiper": "^10.1.0"
   }
 }
