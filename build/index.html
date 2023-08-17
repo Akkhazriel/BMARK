@@ -10,25 +10,26 @@
     <script defer src="./js/index.bundle.js"></script>
 </head>
 <body>
-
     <header class="header">
     <div class="header__container">
-        <a href="#!" class="header__logo"><img src="./../img/header/logo.svg" alt="Logo"></a>
-        <div class="header__navigation">
-            <nav class="header__menu menu">
-                <ul class="menu__body">
-                    <li class="menu__item"><a href="#!" class="menu__link">Home</a></li>
-                    <li class="menu__item"><a href="#!" class="menu__link">Listing</a></li>
-                    <li class="menu__item"><a href="#!" class="menu__link">Property</a></li>
-                    <li class="menu__item"><a href="#!" class="menu__link">Agents</a></li>
-                    <li class="menu__item"><a href="#!" class="menu__link">Blog</a></li>
-                </ul>
-            </nav>
-            <button class="button-signIn">Sign In</button>
-            <div class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="header__wrapper">
+            <a href="#!" class="header__logo"><img src="./../../img/header/logo.svg" alt="Logo"></a>
+            <div class="header__navigation">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#!" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#!" class="nav__link">Listing</a></li>
+                        <li class="nav__item"><a href="#!" class="nav__link">Property</a></li>
+                        <li class="nav__item"><a href="#!" class="nav__link">Agents</a></li>
+                        <li class="nav__item"><a href="#!" class="nav__link">Blog</a></li>
+                    </ul>
+                </nav>
+                <button class="nav__button button-signIn">Sign In</button>
+                <div class="nav__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </div>
@@ -36,298 +37,51 @@
     <main class="main">
         <section class="hero">
     <div class="hero__container">
-        <div class="hero__head">
-            <h1 class="hero__title">Easy way to find a home
-                that’s perfect for you</h1>
-            <p class="hero__desc">The find and most trusted marketplace of design & build house in the world.</p>
-        </div>
-        <div class="hero__form">
-            <div class="form__info">
-                <a href="#!" class="form__info-link _active">Rent</a>
-                <a href="#!" class="form__info-link">Buy</a>
-                <a href="#!" class="form__info-link">Sell</a>
+        <div class="hero__wrapper">
+            <div class="hero__header">
+                <h1 class="hero__title">Easy way to find a home
+                    that’s perfect for you</h1>
+                <p class="hero__desc">The find and most trusted marketplace of design & build house in the world.</p>
             </div>
-            <div class="form__search">
+            <div class="hero__form">
                 <form action="" class="form">
-                    <div class="form__search-item">
-                        <label for="location" class="form__label form__label-location">Location</label>
-                        <input type="text" class="form__input form__input-location" id="location" placeholder="Los Angels">    
+                    <div class="form__info">
+                        <a href="#!" class="form__info-link">Rent</a>
+                        <a href="#!" class="form__info-link">Buy</a>
+                        <a href="#!" class="form__info-link">Sell</a>
                     </div>
-                    <div class="form__search-item">
-                        <label for="type" class="form__label form__label-type">Property Type</label>
-                        <div class="form__select">
-                            <div class="select__header">
-                                <span class="select__current">Deluxe</span>
+                    <div class="form__row">
+                        <div class="form__category">
+                            <div class="form__category-location">
+                                <label for="" class="form__label form__label-location">Location</label>
+                                <input type="text" class="form__input form__input-location" placeholder="Los Angels">
                             </div>
-                            <div class="select__body">
-                                <a href="#!" class="select__item">Standart</a>
-                                <a href="#!" class="select__item">Bussiness</a>
-                                <a href="#!" class="select__item">Deluxe</a>
+                            <div class="form__category-type">
+                                <label for="" class="form__label form__label-type">Property Type</label>
+                                <div class="form__type-header">
+                                    <span class="form__header-value">Delux</span>
+                                </div>
+                                <div class="form__type-body">
+                                    <div class="form__body-item">Normal</div>
+                                    <div class="form__body-item">Delux</div>
+                                    <div class="form__body-item">Bussiness</div>
+                                </div>
                             </div>
-                        </div>    
-                    </div>
-                    <div class="form__search-item">
-                        <label for="price" class="form__label form__label-price">Average Price</label>
-
-                        <input type="number" class="form__input form__input-number" id="price" placeholder="$7000 - 8000">
-      
+                            <div class="form__category-price">
+                                <label for="" class="form__label form__label-price">Average Price</label>
+                                <input type="number" class="form__input form__input-price" placeholder="$7000 - 8000">
+                            </div>
+                        </div>
+                        <div class="form__btn">
+                            <button class="button-search form__button">Search</button>
+                        </div>
                     </div>
                 </form>
-                <button class="hero__button button-search">Search</button>
             </div>
         </div>
     </div>
-    <img src="./../img/hero/hero.png" alt="" class="hero-bg">
+    <!-- <img src="./../../img/hero/hero.png" alt="House" class="hero__bg"> -->
 </section>
-        <section class="properties">
-    <div class="properties__container">
-        <div class="properties__header">
-            <div class="properties__title">
-                <h1 class="title-2">See our properties</h1>
-                <p class="properties__desc">The modern way to sell/buy/rent your own home.</p>
-            </div>
-            <div class="properties__btns">
-                <label class="properties__btns-wrapper">
-                    <input type="checkbox" id="checkbox1" class="properties__btn-radio">
-                    <span class="properties__btn-radio-fake"></span>
-                    <span class="properties__btn-radio-text">Rent</span>
-                </label>
-                <label class="properties__btns-wrapper">
-                    <input type="checkbox" id="checkbox2" class="properties__btn-radio">
-                    <span class="properties__btn-radio-fake"></span>
-                    <span class="properties__btn-radio-text">Buy</span>
-                </label>
-                <label class="properties__btns-wrapper">
-                    <input type="checkbox" id="checkbox3" class="properties__btn-radio">
-                    <span class="properties__btn-radio-fake"></span>
-                    <span class="properties__btn-radio-text">Sell</span>
-                </label>
-            </div>
-        </div>
-        <div class="properties__cards swiper">
-            <div class="properties__cards-row swiper-wrapper">
-                <div class="properties__card swiper-slide">
-                    <div class="properties__card-info">
-                        <img src="./../img/properties/01.jpg" alt="img" class="card__info-img">
-                        <h3 class="card__info-title">Nomaden Omah Sekut</h3>
-                        <p class="card__info-desc">San Diego, California, USA</p>
-                    </div>
-                    <div class="properties__card-price">
-                        <h4 class="card__price-price">$699,000</h4>
-                        <ul class="card__price-items">
-                            <li class="price__item">2 Beds</li>
-                            <li class="price__item">1 Bath</li>
-                            <li class="price__item">1,109 sqft</li>
-                        </ul>
-                    </div>
-                    <button class="properties__button button-details">See Details</button>
-                </div>
-                <div class="properties__card swiper-slide">
-                    <div class="properties__card-info">
-                        <img src="./../img/properties/02.jpg" alt="img" class="card__info-img">
-                        <h3 class="card__info-title">Real Bluestyle House</h3>
-                        <p class="card__info-desc">San Diego, California, USA</p>
-                    </div>
-                    <div class="properties__card-price">
-                        <h4 class="card__price-price">$699,000</h4>
-                        <ul class="card__price-items">
-                            <li class="price__item">2 Beds</li>
-                            <li class="price__item">1 Bath</li>
-                            <li class="price__item">1,109 sqft</li>
-                        </ul>
-                    </div>
-                    <button class="properties__button button-details">See Details</button>
-                </div>
-                <div class="properties__card swiper-slide">
-                    <div class="properties__card-info">
-                        <img src="./../img/properties/03.jpg" alt="img" class="card__info-img">
-                        <h3 class="card__info-title">Luxury Umahu Mantappu</h3>
-                        <p class="card__info-desc">San Diego, California, USA</p>
-                    </div>
-                    <div class="properties__card-price">
-                        <h4 class="card__price-price">$699,000</h4>
-                        <ul class="card__price-items">
-                            <li class="price__item">2 Beds</li>
-                            <li class="price__item">1 Bath</li>
-                            <li class="price__item">1,109 sqft</li>
-                        </ul>
-                    </div>
-                    <button class="properties__button button-details">See Details</button>
-                </div>
-                <div class="properties__card swiper-slide">
-                    <div class="properties__card-info">
-                        <img src="./../img/properties/01.jpg" alt="img" class="card__info-img">
-                        <h3 class="card__info-title">Nomaden Omah Sekut</h3>
-                        <p class="card__info-desc">San Diego, California, USA</p>
-                    </div>
-                    <div class="properties__card-price">
-                        <h4 class="card__price-price">$699,000</h4>
-                        <ul class="card__price-items">
-                            <li class="price__item">2 Beds</li>
-                            <li class="price__item">1 Bath</li>
-                            <li class="price__item">1,109 sqft</li>
-                        </ul>
-                    </div>
-                    <button class="properties__button button-details">See Details</button>
-                </div>
-                <div class="properties__card swiper-slide">
-                    <div class="properties__card-info">
-                        <img src="./../img/properties/02.jpg" alt="img" class="card__info-img">
-                        <h3 class="card__info-title">Nomaden Omah Sekut</h3>
-                        <p class="card__info-desc">San Diego, California, USA</p>
-                    </div>
-                    <div class="properties__card-price">
-                        <h4 class="card__price-price">$699,000</h4>
-                        <ul class="card__price-items">
-                            <li class="price__item">2 Beds</li>
-                            <li class="price__item">1 Bath</li>
-                            <li class="price__item">1,109 sqft</li>
-                        </ul>
-                    </div>
-                    <button class="properties__button button-details">See Details</button>
-                </div>
-                <div class="properties__card swiper-slide">
-                    <div class="properties__card-info">
-                        <img src="./../img/properties/03.jpg" alt="img" class="card__info-img">
-                        <h3 class="card__info-title">Nomaden Omah Sekut</h3>
-                        <p class="card__info-desc">San Diego, California, USA</p>
-                    </div>
-                    <div class="properties__card-price">
-                        <h4 class="card__price-price">$699,000</h4>
-                        <ul class="card__price-items">
-                            <li class="price__item">2 Beds</li>
-                            <li class="price__item">1 Bath</li>
-                            <li class="price__item">1,109 sqft</li>
-                        </ul>
-                    </div>
-                    <button class="properties__button button-details">See Details</button>
-                </div>
-            </div>
-
-            <div class="properties__cards-btn swiper-buttons">            
-                <div class="swiper-button swiper-button-prev" id="#prev">
-                    <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.7394 35.0006L55.2607 35.0006" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M26.2844 46.4969L14.739 35.0011L26.2844 23.5034" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg> 
-                </div>
-                <div class="swiper-button swiper-button-next _active" id="#next">
-                    <svg  width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M55.3016 34.9994H14.7803" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M43.7566 23.5031L55.302 34.9989L43.7566 46.4966" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg> 
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-        <section class="benefit">
-    <div class="benefit__container">
-        <div class="benefit__img">
-            <div class="benefit__discover-place">
-                <h5 class="discover__title">Discover Place</h5>
-                <p class="discover__location">San Diego, CA</p>
-                <div class="discover__img-row">
-                    <img src="./../img/benefits/slide-icons/01.jpg" alt="" class="discover__row-item">
-                    <img src="./../img/benefits/slide-icons/02.jpg" alt="" class="discover__row-item">
-                    <img src="./../img/benefits/slide-icons/03.jpg" alt="" class="discover__row-item">
-                    <a href="#!" class="discover__row-btn"></a>
-                </div>
-            </div>
-        </div>
-        <div class="benefit__info">
-            <h2 class="benefit__info-title">See some benefit from our properties</h2>
-            <div class="benefit__info-cl">
-                <div class="benefit__cl-item">
-                    <div class="cl__item-img cl__item-img-protect"></div>
-                    <div class="cl__item-text">
-                        <h3 class="cl__item-title">100& Protection</h3>
-                        <p class="cl__item-desc">All secure protection for your future house</p>
-                    </div>
-                </div>
-                <div class="benefit__cl-item">
-                    <div class="cl__item-img cl__item-img-house"></div>
-                    <div class="cl__item-text">
-                        <h3 class="cl__item-title">Top Tier House</h3>
-                        <p class="cl__item-desc">We just provide top tier house for you</p>
-                    </div>
-                </div>
-                <div class="benefit__cl-item">
-                    <div class="cl__item-img cl__item-img-transparancy"></div>
-                    <div class="cl__item-text">
-                        <h3 class="cl__item-title">Transparancy</h3>
-                        <p class="cl__item-desc">Transparancy is always for customers</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-        <section class="event">
-    <div class="event__container">
-        <div class="event__info">
-            <h2 class="title-2">What’s happening in San Diego, CA</h2>
-            <p class="event__desc">Over 30,000+ people work for us and more than 70 total <br> countries all over the world, 1,850 homes for sale 2 open <br> house 3,700 home recently sold 150 price reduceed 2 for elsoures.</p>
-            <div class="event__stats">
-                <div class="event__stats-item">
-                    <h5 class="event__item-general">1,850</h5>
-                    <span>HOMES FOR SALE</span>
-                </div>
-                <div class="event__stats-item">
-                    <h5 class="event__item-general">3,700</h5>
-                    <span>RECENTLY SOLD</span>
-                </div>
-                <div class="event__stats-item">
-                    <h5 class="event__item-general">12</h5>
-                    <span>YEARS EXPERIENCE</span>
-                </div>
-            </div>
-        </div>
-        <div class="event__card">
-            <div class="event__card-content">
-                <div class="card__img">
-                    <img src="./../img/info/card/card-bg.jpg" alt="card">
-                </div>
-                <div class="card__likes">
-                    <div class="card__likes-preview">
-                        <img src="./../img/info/card/cards-users/Ellipse 14.svg" alt="card" class="card__preview-icon">
-                        <img src="./../img/info/card/cards-users/Ellipse 15.svg" alt="card" class="card__preview-icon">
-                        <img src="./../img/info/card/cards-users/Ellipse 16.svg" alt="card" class="card__preview-icon">
-                        <img src="./../img/info/card/cards-users/Ellipse 17.svg" alt="card" class="card__preview-icon">
-                    </div>
-                    <span class="card__likes-text">10+ Talented People</span>
-                </div>
-                <div class="card__desc">
-                    <p class="card__desc-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's 
-                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    </p>
-                </div>
-                <div class="card__action">
-                    <span class="card__action-comments">100</span>
-                    <span class="card__action-share">40</span>
-                </div>
-            </div>
-            <div class="event__card-subscribe">
-                <img src="./../img/info/card/san-diego-icon.svg" alt="Icon" class="event__subscribe-profile">
-                <div class="event__subscribe-username">
-                    <h5 class="subscribe__username">San Diego, CA</h5>
-                    <p class="subscribe__desc">Real Estate</p>
-                </div>
-                <div class="event__subscribe-count">
-                    <span class="subscribe__count-posts">420 Posts</span>
-                    <span class="subscribe__count-followers">230k Followers</span>
-                </div>
-                <div class="event__subscribe-btns">
-                    <a href="#!" class="event__button-following button-sub">Following</a>
-                    <a href="#!" class="event__button-messages button-sub">Messages</a>
-                </div>
-            </div>
-            <div class="event__card-google"></div>
-        </div>
-    </div>
-</section>
-
     </main>
     
 

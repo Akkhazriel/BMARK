@@ -1,45 +1,47 @@
 <section class="hero">
     <div class="hero__container">
-        <div class="hero__head">
-            <h1 class="hero__title">Easy way to find a home
-                that’s perfect for you</h1>
-            <p class="hero__desc">The find and most trusted marketplace of design & build house in the world.</p>
-        </div>
-        <div class="hero__form">
-            <div class="form__info">
-                <a href="#!" class="form__info-link _active">Rent</a>
-                <a href="#!" class="form__info-link">Buy</a>
-                <a href="#!" class="form__info-link">Sell</a>
+        <div class="hero__wrapper">
+            <div class="hero__header">
+                <h1 class="hero__title">Easy way to find a home
+                    that’s perfect for you</h1>
+                <p class="hero__desc">The find and most trusted marketplace of design & build house in the world.</p>
             </div>
-            <div class="form__search">
+            <div class="hero__form">
                 <form action="" class="form">
-                    <div class="form__search-item">
-                        <label for="location" class="form__label form__label-location">Location</label>
-                        <input type="text" class="form__input form__input-location" id="location" placeholder="Los Angels">    
+                    <div class="form__info">
+                        <a href="#!" class="form__info-link">Rent</a>
+                        <a href="#!" class="form__info-link">Buy</a>
+                        <a href="#!" class="form__info-link">Sell</a>
                     </div>
-                    <div class="form__search-item">
-                        <label for="type" class="form__label form__label-type">Property Type</label>
-                        <div class="form__select">
-                            <div class="select__header">
-                                <span class="select__current">Deluxe</span>
+                    <div class="form__row">
+                        <div class="form__category">
+                            <div class="form__category-location">
+                                <label for="" class="form__label form__label-location">Location</label>
+                                <input type="text" class="form__input form__input-location" placeholder="Los Angels">
                             </div>
-                            <div class="select__body">
-                                <a href="#!" class="select__item">Standart</a>
-                                <a href="#!" class="select__item">Bussiness</a>
-                                <a href="#!" class="select__item">Deluxe</a>
+                            <div class="form__category-type">
+                                <label for="" class="form__label form__label-type">Property Type</label>
+                                <div class="form__type-header">
+                                    <span class="form__header-value">Delux</span>
+                                </div>
+                                <div class="form__type-body">
+                                    <div class="form__body-item">Normal</div>
+                                    <div class="form__body-item">Delux</div>
+                                    <div class="form__body-item">Bussiness</div>
+                                </div>
                             </div>
-                        </div>    
-                    </div>
-                    <div class="form__search-item">
-                        <label for="price" class="form__label form__label-price">Average Price</label>
-
-                        <input type="number" class="form__input form__input-number" id="price" placeholder="$7000 - 8000">
-      
+                            <div class="form__category-price">
+                                <label for="" class="form__label form__label-price">Average Price</label>
+                                <input type="number" class="form__input form__input-price" placeholder="$7000 - 8000">
+                            </div>
+                        </div>
+                        <div class="form__btn">
+                            <button class="button-search form__button">Search</button>
+                        </div>
                     </div>
                 </form>
-                <button class="hero__button button-search">Search</button>
             </div>
         </div>
     </div>
-    <img src="./../img/hero/hero.png" alt="" class="hero-bg">
+    <!-- <img src="./../../img/hero/hero.png" alt="House" class="hero__bg"> -->
 </section>
