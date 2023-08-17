@@ -1,15 +1,17 @@
 export let select = function () {
-    let selectHeader = document.querySelector('.form__type-body');
-    let selectItem = document.querySelectorAll('.form__category-item');
+    let selectHeader = document.querySelectorAll('.form__type-header');
+    let selectItem = document.querySelectorAll('.form__body-item');
 
-    selectHeader.addEventListener('click', selectToggle);
+    selectHeader.forEach(item => {
+        item.addEventListener('click', selectToggle)
+    });
 
     selectItem.forEach(item => {
         item.addEventListener('click', selectChoose)
     });
 
     function selectToggle() {
-        this.classList.toggle('_active');
+        this.parentElement.classList.toggle('_active');
     }
 
     function selectChoose() {
@@ -18,6 +20,7 @@ export let select = function () {
             currentText = select.querySelector('.form__header-value');
         currentText.innerText = text;
         select.classList.remove('_active');
+
     }
 };
 
