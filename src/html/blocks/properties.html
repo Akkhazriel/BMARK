@@ -8,22 +8,22 @@
                 </div>
                 <div class="properties__radioBtn">
                     <div class="radioBtn__item">
-                        <input type="radio" class="radioBtn__input" id="radio1">
-                        <label for="rdaio1" class="radioBtn__label">Rent</label>
+                        <input type="radio" class="radioBtn__input" name="radio" id="radio1" onclick="toggleChecked(this)">
+                        <label for="radio1" class="radioBtn__label">Rent</label>
                     </div>
                     <div class="radioBtn__item">
-                        <input type="radio" class="radioBtn__input" id="radio2">
-                        <label for="rdaio2" class="radioBtn__label">Buy</label>
+                        <input type="radio" class="radioBtn__input" name="radio" id="radio2" onclick="">
+                        <label for="radio2" class="radioBtn__label">Buy</label>
                     </div>
                     <div class="radioBtn__item">
-                        <input type="radio" class="radioBtn__input" id="radio3">
-                        <label for="rdaio3" class="radioBtn__label">Sell</label>
+                        <input type="radio" class="radioBtn__input" name="radio" id="radio3" onclick="">
+                        <label for="radio3" class="radioBtn__label">Sell</label>
                     </div>
                 </div>
             </div>
-            <div class="properties__content">
-                <div class="properties__cards">
-                    <div class="properties__card">
+            <div class="properties__content swiper">
+                <div class="properties__cards swiper-wrapper">
+                    <div class="properties__card swiper-slide">
                         <div class="card__content">
                             <img src="./../img/properties/01.jpg" alt="img" class="card__img">
                             <div class="card__nomination">
@@ -43,11 +43,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="properties__card">
+                    <div class="properties__card swiper-slide">
                         <div class="card__content">
-                            <img src="./../img/properties/01.jpg" alt="img" class="card__img">
+                            <img src="./../img/properties/02.jpg" alt="img" class="card__img">
                             <div class="card__nomination">
-                                <h3 class="card__nomination-title">Nomaden Omah Sekut</h3>
+                                <h3 class="card__nomination-title">Real Bluestyle House</h3>
                                 <p class="card__nomination-desc">San Diego, California, USA</p>
                             </div>
                             <div class="card__cost">
@@ -63,11 +63,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="properties__card">
+                    <div class="properties__card swiper-slide">
                         <div class="card__content">
-                            <img src="./../img/properties/01.jpg" alt="img" class="card__img">
+                            <img src="./../img/properties/03.jpg" alt="img" class="card__img">
                             <div class="card__nomination">
-                                <h3 class="card__nomination-title">Nomaden Omah Sekut</h3>
+                                <h3 class="card__nomination-title">Luxury Umahu Mantappu</h3>
                                 <p class="card__nomination-desc">San Diego, California, USA</p>
                             </div>
                             <div class="card__cost">
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="card__btn">
-                                <button class="card__btn-details button-details">See Details</button>
+                                <button class="card__btn-details  button-details">See Details</button>
                             </div>
                         </div>
                     </div>
